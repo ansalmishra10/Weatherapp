@@ -79,7 +79,7 @@ componentDidMount () {
                 fetch(url)
         .then(response => response.json())
         .then(data => {
-           alert(JSON.stringify(data.list[0].weather[0].icon));
+           // alert(JSON.stringify(data.list[0].weather[0].icon));
            this.setState({today:data.list[5].main.temp});
            this.setState({one:data.list[9].main.temp});
            this.setState({two:data.list[17].main.temp});
